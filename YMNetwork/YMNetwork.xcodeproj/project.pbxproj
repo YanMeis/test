@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50A01A09168087BF8670500E /* libPods-YMNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 313C49D67CCA19D680352732 /* libPods-YMNetwork.a */; };
+		67AC1E0D1FDE114B0016EF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E0C1FDE114B0016EF1A /* AppDelegate.m */; };
+		67AC1E101FDE114B0016EF1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E0F1FDE114B0016EF1A /* ViewController.m */; };
+		67AC1E131FDE114B0016EF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC1E111FDE114B0016EF1A /* Main.storyboard */; };
+		67AC1E151FDE114B0016EF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AC1E141FDE114B0016EF1A /* Assets.xcassets */; };
+		67AC1E181FDE114B0016EF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC1E161FDE114B0016EF1A /* LaunchScreen.storyboard */; };
+		67AC1E1B1FDE114B0016EF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E1A1FDE114B0016EF1A /* main.m */; };
+		67AC1E251FDE114B0016EF1A /* YMNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E241FDE114B0016EF1A /* YMNetworkTests.m */; };
+		67AC1E301FDE114B0016EF1A /* YMNetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E2F1FDE114B0016EF1A /* YMNetworkUITests.m */; };
+		67AC1E441FDE17710016EF1A /* YMNetTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E431FDE17710016EF1A /* YMNetTask.m */; };
+		67AC1E4A1FDE180A0016EF1A /* YMNetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E491FDE180A0016EF1A /* YMNetConfig.m */; };
+		67AC1E4D1FDE18AE0016EF1A /* YMNetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E4C1FDE18AE0016EF1A /* YMNetResult.m */; };
+		67AC1E511FDE24830016EF1A /* YMSyncResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E501FDE24830016EF1A /* YMSyncResult.m */; };
+		67AC1E541FDE26180016EF1A /* YMRealNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E531FDE26180016EF1A /* YMRealNetManager.m */; };
+		67AC1E571FDE295F0016EF1A /* YMRealTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E561FDE295F0016EF1A /* YMRealTask.m */; };
+		67AC1E6B1FDE2DEC0016EF1A /* YMNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E6A1FDE2DEC0016EF1A /* YMNetManager.m */; };
+		67AC1E6E1FDE30CC0016EF1A /* YMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E6D1FDE30CC0016EF1A /* YMManager.m */; };
+		67AC1E711FDE33670016EF1A /* YMInformationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E701FDE33670016EF1A /* YMInformationCenter.m */; };
+		67AC1E741FDE36570016EF1A /* YMManager+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E731FDE36570016EF1A /* YMManager+User.m */; };
+		67AC1E771FDE37680016EF1A /* YMTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E761FDE37680016EF1A /* YMTask.m */; };
+		67AC1E7B1FDE387B0016EF1A /* YMResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E7A1FDE387B0016EF1A /* YMResult.m */; };
+		67AC1E7F1FDE39880016EF1A /* YMBaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E7E1FDE39880016EF1A /* YMBaseTask.m */; };
+		67AC1E831FDE4E7B0016EF1A /* YMCommandProcessTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E821FDE4E7B0016EF1A /* YMCommandProcessTask.m */; };
+		67AC1E861FDE4ED50016EF1A /* YMDispatchQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E851FDE4ED50016EF1A /* YMDispatchQueueManager.m */; };
+		67AC1E891FDE4FAD0016EF1A /* YMBaseNetTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E881FDE4FAD0016EF1A /* YMBaseNetTask.m */; };
+		67AC1E941FDE51330016EF1A /* Request_AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E931FDE51330016EF1A /* Request_AccessToken.m */; };
+		67AC1E971FDE51470016EF1A /* Response_AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E961FDE51470016EF1A /* Response_AccessToken.m */; };
+		67AC1E9A1FDE516F0016EF1A /* YMNetTask_AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1E991FDE516F0016EF1A /* YMNetTask_AccessToken.m */; };
+		67AC1EA41FDE554F0016EF1A /* Request_Oauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EA31FDE554F0016EF1A /* Request_Oauth.m */; };
+		67AC1EAA1FDE55860016EF1A /* YMNetTask_Oauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EA91FDE55860016EF1A /* YMNetTask_Oauth.m */; };
+		67AC1EAD1FDE569D0016EF1A /* Response_Oauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EAC1FDE569D0016EF1A /* Response_Oauth.m */; };
+		67AC1EB01FDE5A0B0016EF1A /* YMCooperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EAF1FDE5A0B0016EF1A /* YMCooperator.m */; };
+		67AC1EB41FDE5C460016EF1A /* TimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EB31FDE5C460016EF1A /* TimeUtils.m */; };
+		67AC1EB71FDE5CB30016EF1A /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EB61FDE5CB30016EF1A /* StringUtils.m */; };
+		67AC1EBD1FDE62920016EF1A /* Request_Oauth+sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EBC1FDE62920016EF1A /* Request_Oauth+sdk.m */; };
+		67AC1EC01FDE62F10016EF1A /* Request_AccessToken+sdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EBF1FDE62F10016EF1A /* Request_AccessToken+sdk.m */; };
+		67AC1EC81FDE65710016EF1A /* NT_CooperatorOauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EC71FDE65710016EF1A /* NT_CooperatorOauth.m */; };
+		67AC1ECB1FDE66990016EF1A /* GlobleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1ECA1FDE66990016EF1A /* GlobleData.m */; };
+		67AC1ED11FDE6DFD0016EF1A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1ED01FDE6DFD0016EF1A /* User.m */; };
+		67AC1ED71FDE6EE20016EF1A /* Request_MemberRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1ED61FDE6EE20016EF1A /* Request_MemberRegist.m */; };
+		67AC1EDA1FDE6F000016EF1A /* Response_MemberRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1ED91FDE6F000016EF1A /* Response_MemberRegist.m */; };
+		67AC1EDD1FDE6F430016EF1A /* NetTask_MemberRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EDC1FDE6F430016EF1A /* NetTask_MemberRegist.m */; };
+		67AC1EE01FDE70800016EF1A /* NT_MemberRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC1EDF1FDE70800016EF1A /* NT_MemberRegist.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67AC1E211FDE114B0016EF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67AC1E001FDE114B0016EF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67AC1E071FDE114B0016EF1A;
+			remoteInfo = YMNetwork;
+		};
+		67AC1E2C1FDE114B0016EF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67AC1E001FDE114B0016EF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67AC1E071FDE114B0016EF1A;
+			remoteInfo = YMNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		313C49D67CCA19D680352732 /* libPods-YMNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YMNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A63615C69F1C743ECE43259 /* Pods-YMNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YMNetwork/Pods-YMNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		67AC1E081FDE114B0016EF1A /* YMNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AC1E0B1FDE114B0016EF1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		67AC1E0C1FDE114B0016EF1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67AC1E0E1FDE114B0016EF1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		67AC1E0F1FDE114B0016EF1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		67AC1E121FDE114B0016EF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67AC1E141FDE114B0016EF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67AC1E171FDE114B0016EF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67AC1E191FDE114B0016EF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67AC1E1A1FDE114B0016EF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67AC1E201FDE114B0016EF1A /* YMNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AC1E241FDE114B0016EF1A /* YMNetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetworkTests.m; sourceTree = "<group>"; };
+		67AC1E261FDE114B0016EF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67AC1E2B1FDE114B0016EF1A /* YMNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AC1E2F1FDE114B0016EF1A /* YMNetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetworkUITests.m; sourceTree = "<group>"; };
+		67AC1E311FDE114B0016EF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67AC1E3F1FDE172D0016EF1A /* YMNetStateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetStateDelegate.h; sourceTree = "<group>"; };
+		67AC1E421FDE17710016EF1A /* YMNetTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetTask.h; sourceTree = "<group>"; };
+		67AC1E431FDE17710016EF1A /* YMNetTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetTask.m; sourceTree = "<group>"; };
+		67AC1E481FDE180A0016EF1A /* YMNetConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetConfig.h; sourceTree = "<group>"; };
+		67AC1E491FDE180A0016EF1A /* YMNetConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetConfig.m; sourceTree = "<group>"; };
+		67AC1E4B1FDE18AE0016EF1A /* YMNetResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetResult.h; sourceTree = "<group>"; };
+		67AC1E4C1FDE18AE0016EF1A /* YMNetResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetResult.m; sourceTree = "<group>"; };
+		67AC1E4E1FDE1D950016EF1A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		67AC1E4F1FDE24830016EF1A /* YMSyncResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMSyncResult.h; sourceTree = "<group>"; };
+		67AC1E501FDE24830016EF1A /* YMSyncResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMSyncResult.m; sourceTree = "<group>"; };
+		67AC1E521FDE26180016EF1A /* YMRealNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMRealNetManager.h; sourceTree = "<group>"; };
+		67AC1E531FDE26180016EF1A /* YMRealNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRealNetManager.m; sourceTree = "<group>"; };
+		67AC1E551FDE295F0016EF1A /* YMRealTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMRealTask.h; sourceTree = "<group>"; };
+		67AC1E561FDE295F0016EF1A /* YMRealTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRealTask.m; sourceTree = "<group>"; };
+		67AC1E681FDE2CCF0016EF1A /* YMNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetwork.h; sourceTree = "<group>"; };
+		67AC1E691FDE2DEC0016EF1A /* YMNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetManager.h; sourceTree = "<group>"; };
+		67AC1E6A1FDE2DEC0016EF1A /* YMNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetManager.m; sourceTree = "<group>"; };
+		67AC1E6C1FDE30CC0016EF1A /* YMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMManager.h; sourceTree = "<group>"; };
+		67AC1E6D1FDE30CC0016EF1A /* YMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMManager.m; sourceTree = "<group>"; };
+		67AC1E6F1FDE33670016EF1A /* YMInformationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMInformationCenter.h; sourceTree = "<group>"; };
+		67AC1E701FDE33670016EF1A /* YMInformationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMInformationCenter.m; sourceTree = "<group>"; };
+		67AC1E721FDE36570016EF1A /* YMManager+User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMManager+User.h"; sourceTree = "<group>"; };
+		67AC1E731FDE36570016EF1A /* YMManager+User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YMManager+User.m"; sourceTree = "<group>"; };
+		67AC1E751FDE37680016EF1A /* YMTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTask.h; sourceTree = "<group>"; };
+		67AC1E761FDE37680016EF1A /* YMTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTask.m; sourceTree = "<group>"; };
+		67AC1E781FDE38060016EF1A /* YMBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBlocks.h; sourceTree = "<group>"; };
+		67AC1E791FDE387B0016EF1A /* YMResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMResult.h; sourceTree = "<group>"; };
+		67AC1E7A1FDE387B0016EF1A /* YMResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMResult.m; sourceTree = "<group>"; };
+		67AC1E7D1FDE39880016EF1A /* YMBaseTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBaseTask.h; sourceTree = "<group>"; };
+		67AC1E7E1FDE39880016EF1A /* YMBaseTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMBaseTask.m; sourceTree = "<group>"; };
+		67AC1E811FDE4E7B0016EF1A /* YMCommandProcessTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCommandProcessTask.h; sourceTree = "<group>"; };
+		67AC1E821FDE4E7B0016EF1A /* YMCommandProcessTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCommandProcessTask.m; sourceTree = "<group>"; };
+		67AC1E841FDE4ED50016EF1A /* YMDispatchQueueManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMDispatchQueueManager.h; sourceTree = "<group>"; };
+		67AC1E851FDE4ED50016EF1A /* YMDispatchQueueManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMDispatchQueueManager.m; sourceTree = "<group>"; };
+		67AC1E871FDE4FAD0016EF1A /* YMBaseNetTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMBaseNetTask.h; sourceTree = "<group>"; };
+		67AC1E881FDE4FAD0016EF1A /* YMBaseNetTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMBaseNetTask.m; sourceTree = "<group>"; };
+		67AC1E8F1FDE511F0016EF1A /* Delegate_AccessToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Delegate_AccessToken.h; sourceTree = "<group>"; };
+		67AC1E921FDE51330016EF1A /* Request_AccessToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request_AccessToken.h; sourceTree = "<group>"; };
+		67AC1E931FDE51330016EF1A /* Request_AccessToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request_AccessToken.m; sourceTree = "<group>"; };
+		67AC1E951FDE51470016EF1A /* Response_AccessToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Response_AccessToken.h; sourceTree = "<group>"; };
+		67AC1E961FDE51470016EF1A /* Response_AccessToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Response_AccessToken.m; sourceTree = "<group>"; };
+		67AC1E981FDE516F0016EF1A /* YMNetTask_AccessToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetTask_AccessToken.h; sourceTree = "<group>"; };
+		67AC1E991FDE516F0016EF1A /* YMNetTask_AccessToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetTask_AccessToken.m; sourceTree = "<group>"; };
+		67AC1E9F1FDE55360016EF1A /* Delegate_Oauth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Delegate_Oauth.h; sourceTree = "<group>"; };
+		67AC1EA21FDE554F0016EF1A /* Request_Oauth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request_Oauth.h; sourceTree = "<group>"; };
+		67AC1EA31FDE554F0016EF1A /* Request_Oauth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request_Oauth.m; sourceTree = "<group>"; };
+		67AC1EA81FDE55860016EF1A /* YMNetTask_Oauth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetTask_Oauth.h; sourceTree = "<group>"; };
+		67AC1EA91FDE55860016EF1A /* YMNetTask_Oauth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetTask_Oauth.m; sourceTree = "<group>"; };
+		67AC1EAB1FDE569D0016EF1A /* Response_Oauth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Response_Oauth.h; sourceTree = "<group>"; };
+		67AC1EAC1FDE569D0016EF1A /* Response_Oauth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Response_Oauth.m; sourceTree = "<group>"; };
+		67AC1EAE1FDE5A0B0016EF1A /* YMCooperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCooperator.h; sourceTree = "<group>"; };
+		67AC1EAF1FDE5A0B0016EF1A /* YMCooperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCooperator.m; sourceTree = "<group>"; };
+		67AC1EB21FDE5C460016EF1A /* TimeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeUtils.h; sourceTree = "<group>"; };
+		67AC1EB31FDE5C460016EF1A /* TimeUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeUtils.m; sourceTree = "<group>"; };
+		67AC1EB51FDE5CB30016EF1A /* StringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		67AC1EB61FDE5CB30016EF1A /* StringUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		67AC1EBB1FDE62920016EF1A /* Request_Oauth+sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Request_Oauth+sdk.h"; sourceTree = "<group>"; };
+		67AC1EBC1FDE62920016EF1A /* Request_Oauth+sdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Request_Oauth+sdk.m"; sourceTree = "<group>"; };
+		67AC1EBE1FDE62F10016EF1A /* Request_AccessToken+sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Request_AccessToken+sdk.h"; sourceTree = "<group>"; };
+		67AC1EBF1FDE62F10016EF1A /* Request_AccessToken+sdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Request_AccessToken+sdk.m"; sourceTree = "<group>"; };
+		67AC1EC61FDE65710016EF1A /* NT_CooperatorOauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NT_CooperatorOauth.h; sourceTree = "<group>"; };
+		67AC1EC71FDE65710016EF1A /* NT_CooperatorOauth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NT_CooperatorOauth.m; sourceTree = "<group>"; };
+		67AC1EC91FDE66990016EF1A /* GlobleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobleData.h; sourceTree = "<group>"; };
+		67AC1ECA1FDE66990016EF1A /* GlobleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobleData.m; sourceTree = "<group>"; };
+		67AC1ECF1FDE6DFD0016EF1A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		67AC1ED01FDE6DFD0016EF1A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		67AC1ED21FDE6ED10016EF1A /* Delegate_MemberRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Delegate_MemberRegist.h; sourceTree = "<group>"; };
+		67AC1ED51FDE6EE20016EF1A /* Request_MemberRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request_MemberRegist.h; sourceTree = "<group>"; };
+		67AC1ED61FDE6EE20016EF1A /* Request_MemberRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request_MemberRegist.m; sourceTree = "<group>"; };
+		67AC1ED81FDE6F000016EF1A /* Response_MemberRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Response_MemberRegist.h; sourceTree = "<group>"; };
+		67AC1ED91FDE6F000016EF1A /* Response_MemberRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Response_MemberRegist.m; sourceTree = "<group>"; };
+		67AC1EDB1FDE6F430016EF1A /* NetTask_MemberRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTask_MemberRegist.h; sourceTree = "<group>"; };
+		67AC1EDC1FDE6F430016EF1A /* NetTask_MemberRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetTask_MemberRegist.m; sourceTree = "<group>"; };
+		67AC1EDE1FDE70800016EF1A /* NT_MemberRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NT_MemberRegist.h; sourceTree = "<group>"; };
+		67AC1EDF1FDE70800016EF1A /* NT_MemberRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NT_MemberRegist.m; sourceTree = "<group>"; };
+		6C07C3C8D5784D9F918FC52E /* Pods-YMNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-YMNetwork/Pods-YMNetwork.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67AC1E051FDE114B0016EF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A01A09168087BF8670500E /* libPods-YMNetwork.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AC1E1D1FDE114B0016EF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AC1E281FDE114B0016EF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02686241DD7E871171314958 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				313C49D67CCA19D680352732 /* libPods-YMNetwork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2584B27EA81C609AB219E9C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A63615C69F1C743ECE43259 /* Pods-YMNetwork.debug.xcconfig */,
+				6C07C3C8D5784D9F918FC52E /* Pods-YMNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67AC1DFF1FDE114B0016EF1A = {
+			isa = PBXGroup;
+			children = (
+				67AC1E0A1FDE114B0016EF1A /* YMNetwork */,
+				67AC1E231FDE114B0016EF1A /* YMNetworkTests */,
+				67AC1E2E1FDE114B0016EF1A /* YMNetworkUITests */,
+				67AC1E091FDE114B0016EF1A /* Products */,
+				2584B27EA81C609AB219E9C0 /* Pods */,
+				02686241DD7E871171314958 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67AC1E091FDE114B0016EF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E081FDE114B0016EF1A /* YMNetwork.app */,
+				67AC1E201FDE114B0016EF1A /* YMNetworkTests.xctest */,
+				67AC1E2B1FDE114B0016EF1A /* YMNetworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67AC1E0A1FDE114B0016EF1A /* YMNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E581FDE2B0B0016EF1A /* User */,
+				67AC1E8B1FDE50CE0016EF1A /* Cooperator */,
+				67AC1E471FDE17C20016EF1A /* Model */,
+				67AC1E801FDE3A390016EF1A /* Thread */,
+				67AC1E3D1FDE16B00016EF1A /* Base */,
+				67AC1EB11FDE5C1C0016EF1A /* Utils */,
+				67AC1E0B1FDE114B0016EF1A /* AppDelegate.h */,
+				67AC1E0C1FDE114B0016EF1A /* AppDelegate.m */,
+				67AC1E0E1FDE114B0016EF1A /* ViewController.h */,
+				67AC1E0F1FDE114B0016EF1A /* ViewController.m */,
+				67AC1E111FDE114B0016EF1A /* Main.storyboard */,
+				67AC1E141FDE114B0016EF1A /* Assets.xcassets */,
+				67AC1E161FDE114B0016EF1A /* LaunchScreen.storyboard */,
+				67AC1E191FDE114B0016EF1A /* Info.plist */,
+				67AC1E1A1FDE114B0016EF1A /* main.m */,
+			);
+			path = YMNetwork;
+			sourceTree = "<group>";
+		};
+		67AC1E231FDE114B0016EF1A /* YMNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E241FDE114B0016EF1A /* YMNetworkTests.m */,
+				67AC1E261FDE114B0016EF1A /* Info.plist */,
+			);
+			path = YMNetworkTests;
+			sourceTree = "<group>";
+		};
+		67AC1E2E1FDE114B0016EF1A /* YMNetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E2F1FDE114B0016EF1A /* YMNetworkUITests.m */,
+				67AC1E311FDE114B0016EF1A /* Info.plist */,
+			);
+			path = YMNetworkUITests;
+			sourceTree = "<group>";
+		};
+		67AC1E3D1FDE16B00016EF1A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E3F1FDE172D0016EF1A /* YMNetStateDelegate.h */,
+				67AC1E421FDE17710016EF1A /* YMNetTask.h */,
+				67AC1E431FDE17710016EF1A /* YMNetTask.m */,
+				67AC1E521FDE26180016EF1A /* YMRealNetManager.h */,
+				67AC1E531FDE26180016EF1A /* YMRealNetManager.m */,
+				67AC1E551FDE295F0016EF1A /* YMRealTask.h */,
+				67AC1E561FDE295F0016EF1A /* YMRealTask.m */,
+				67AC1E4E1FDE1D950016EF1A /* PrefixHeader.pch */,
+				67AC1E681FDE2CCF0016EF1A /* YMNetwork.h */,
+				67AC1E781FDE38060016EF1A /* YMBlocks.h */,
+				67AC1E691FDE2DEC0016EF1A /* YMNetManager.h */,
+				67AC1E6A1FDE2DEC0016EF1A /* YMNetManager.m */,
+				67AC1E6C1FDE30CC0016EF1A /* YMManager.h */,
+				67AC1E6D1FDE30CC0016EF1A /* YMManager.m */,
+				67AC1E721FDE36570016EF1A /* YMManager+User.h */,
+				67AC1E731FDE36570016EF1A /* YMManager+User.m */,
+				67AC1E751FDE37680016EF1A /* YMTask.h */,
+				67AC1E761FDE37680016EF1A /* YMTask.m */,
+				67AC1E7D1FDE39880016EF1A /* YMBaseTask.h */,
+				67AC1E7E1FDE39880016EF1A /* YMBaseTask.m */,
+				67AC1E871FDE4FAD0016EF1A /* YMBaseNetTask.h */,
+				67AC1E881FDE4FAD0016EF1A /* YMBaseNetTask.m */,
+				67AC1E791FDE387B0016EF1A /* YMResult.h */,
+				67AC1E7A1FDE387B0016EF1A /* YMResult.m */,
+				67AC1E6F1FDE33670016EF1A /* YMInformationCenter.h */,
+				67AC1E701FDE33670016EF1A /* YMInformationCenter.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		67AC1E471FDE17C20016EF1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E481FDE180A0016EF1A /* YMNetConfig.h */,
+				67AC1E491FDE180A0016EF1A /* YMNetConfig.m */,
+				67AC1E4B1FDE18AE0016EF1A /* YMNetResult.h */,
+				67AC1E4C1FDE18AE0016EF1A /* YMNetResult.m */,
+				67AC1E4F1FDE24830016EF1A /* YMSyncResult.h */,
+				67AC1E501FDE24830016EF1A /* YMSyncResult.m */,
+				67AC1EAE1FDE5A0B0016EF1A /* YMCooperator.h */,
+				67AC1EAF1FDE5A0B0016EF1A /* YMCooperator.m */,
+				67AC1ECF1FDE6DFD0016EF1A /* User.h */,
+				67AC1ED01FDE6DFD0016EF1A /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67AC1E581FDE2B0B0016EF1A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1EC41FDE65460016EF1A /* NetTask */,
+				67AC1E5B1FDE2B360016EF1A /* Delegate */,
+				67AC1E5A1FDE2B2D0016EF1A /* Model */,
+				67AC1E591FDE2B140016EF1A /* Task */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		67AC1E591FDE2B140016EF1A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1EDB1FDE6F430016EF1A /* NetTask_MemberRegist.h */,
+				67AC1EDC1FDE6F430016EF1A /* NetTask_MemberRegist.m */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		67AC1E5A1FDE2B2D0016EF1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1ED51FDE6EE20016EF1A /* Request_MemberRegist.h */,
+				67AC1ED61FDE6EE20016EF1A /* Request_MemberRegist.m */,
+				67AC1ED81FDE6F000016EF1A /* Response_MemberRegist.h */,
+				67AC1ED91FDE6F000016EF1A /* Response_MemberRegist.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67AC1E5B1FDE2B360016EF1A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1ED21FDE6ED10016EF1A /* Delegate_MemberRegist.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		67AC1E801FDE3A390016EF1A /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E811FDE4E7B0016EF1A /* YMCommandProcessTask.h */,
+				67AC1E821FDE4E7B0016EF1A /* YMCommandProcessTask.m */,
+				67AC1E841FDE4ED50016EF1A /* YMDispatchQueueManager.h */,
+				67AC1E851FDE4ED50016EF1A /* YMDispatchQueueManager.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		67AC1E8B1FDE50CE0016EF1A /* Cooperator */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1EC51FDE65500016EF1A /* NetTask */,
+				67AC1E8E1FDE50F10016EF1A /* Delegate */,
+				67AC1E8D1FDE50EA0016EF1A /* Model */,
+				67AC1E8C1FDE50E20016EF1A /* Task */,
+			);
+			path = Cooperator;
+			sourceTree = "<group>";
+		};
+		67AC1E8C1FDE50E20016EF1A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E981FDE516F0016EF1A /* YMNetTask_AccessToken.h */,
+				67AC1E991FDE516F0016EF1A /* YMNetTask_AccessToken.m */,
+				67AC1EA81FDE55860016EF1A /* YMNetTask_Oauth.h */,
+				67AC1EA91FDE55860016EF1A /* YMNetTask_Oauth.m */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		67AC1E8D1FDE50EA0016EF1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E921FDE51330016EF1A /* Request_AccessToken.h */,
+				67AC1E931FDE51330016EF1A /* Request_AccessToken.m */,
+				67AC1EBE1FDE62F10016EF1A /* Request_AccessToken+sdk.h */,
+				67AC1EBF1FDE62F10016EF1A /* Request_AccessToken+sdk.m */,
+				67AC1EA21FDE554F0016EF1A /* Request_Oauth.h */,
+				67AC1EA31FDE554F0016EF1A /* Request_Oauth.m */,
+				67AC1EBB1FDE62920016EF1A /* Request_Oauth+sdk.h */,
+				67AC1EBC1FDE62920016EF1A /* Request_Oauth+sdk.m */,
+				67AC1E951FDE51470016EF1A /* Response_AccessToken.h */,
+				67AC1E961FDE51470016EF1A /* Response_AccessToken.m */,
+				67AC1EAB1FDE569D0016EF1A /* Response_Oauth.h */,
+				67AC1EAC1FDE569D0016EF1A /* Response_Oauth.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67AC1E8E1FDE50F10016EF1A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1E8F1FDE511F0016EF1A /* Delegate_AccessToken.h */,
+				67AC1E9F1FDE55360016EF1A /* Delegate_Oauth.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		67AC1EB11FDE5C1C0016EF1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1EB21FDE5C460016EF1A /* TimeUtils.h */,
+				67AC1EB31FDE5C460016EF1A /* TimeUtils.m */,
+				67AC1EB51FDE5CB30016EF1A /* StringUtils.h */,
+				67AC1EB61FDE5CB30016EF1A /* StringUtils.m */,
+				67AC1EC91FDE66990016EF1A /* GlobleData.h */,
+				67AC1ECA1FDE66990016EF1A /* GlobleData.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		67AC1EC41FDE65460016EF1A /* NetTask */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1EDE1FDE70800016EF1A /* NT_MemberRegist.h */,
+				67AC1EDF1FDE70800016EF1A /* NT_MemberRegist.m */,
+			);
+			path = NetTask;
+			sourceTree = "<group>";
+		};
+		67AC1EC51FDE65500016EF1A /* NetTask */ = {
+			isa = PBXGroup;
+			children = (
+				67AC1EC61FDE65710016EF1A /* NT_CooperatorOauth.h */,
+				67AC1EC71FDE65710016EF1A /* NT_CooperatorOauth.m */,
+			);
+			path = NetTask;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67AC1E071FDE114B0016EF1A /* YMNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AC1E341FDE114B0016EF1A /* Build configuration list for PBXNativeTarget "YMNetwork" */;
+			buildPhases = (
+				1F152082E7FABDD41D709F63 /* [CP] Check Pods Manifest.lock */,
+				67AC1E041FDE114B0016EF1A /* Sources */,
+				67AC1E051FDE114B0016EF1A /* Frameworks */,
+				67AC1E061FDE114B0016EF1A /* Resources */,
+				197FF37F0F9173212C965D7E /* [CP] Embed Pods Frameworks */,
+				F7E93BEF047A138ED063B6A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMNetwork;
+			productName = YMNetwork;
+			productReference = 67AC1E081FDE114B0016EF1A /* YMNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67AC1E1F1FDE114B0016EF1A /* YMNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AC1E371FDE114B0016EF1A /* Build configuration list for PBXNativeTarget "YMNetworkTests" */;
+			buildPhases = (
+				67AC1E1C1FDE114B0016EF1A /* Sources */,
+				67AC1E1D1FDE114B0016EF1A /* Frameworks */,
+				67AC1E1E1FDE114B0016EF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67AC1E221FDE114B0016EF1A /* PBXTargetDependency */,
+			);
+			name = YMNetworkTests;
+			productName = YMNetworkTests;
+			productReference = 67AC1E201FDE114B0016EF1A /* YMNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67AC1E2A1FDE114B0016EF1A /* YMNetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AC1E3A1FDE114B0016EF1A /* Build configuration list for PBXNativeTarget "YMNetworkUITests" */;
+			buildPhases = (
+				67AC1E271FDE114B0016EF1A /* Sources */,
+				67AC1E281FDE114B0016EF1A /* Frameworks */,
+				67AC1E291FDE114B0016EF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67AC1E2D1FDE114B0016EF1A /* PBXTargetDependency */,
+			);
+			name = YMNetworkUITests;
+			productName = YMNetworkUITests;
+			productReference = 67AC1E2B1FDE114B0016EF1A /* YMNetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67AC1E001FDE114B0016EF1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "刘艳梅";
+				TargetAttributes = {
+					67AC1E071FDE114B0016EF1A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					67AC1E1F1FDE114B0016EF1A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 67AC1E071FDE114B0016EF1A;
+					};
+					67AC1E2A1FDE114B0016EF1A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 67AC1E071FDE114B0016EF1A;
+					};
+				};
+			};
+			buildConfigurationList = 67AC1E031FDE114B0016EF1A /* Build configuration list for PBXProject "YMNetwork" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67AC1DFF1FDE114B0016EF1A;
+			productRefGroup = 67AC1E091FDE114B0016EF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67AC1E071FDE114B0016EF1A /* YMNetwork */,
+				67AC1E1F1FDE114B0016EF1A /* YMNetworkTests */,
+				67AC1E2A1FDE114B0016EF1A /* YMNetworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67AC1E061FDE114B0016EF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AC1E181FDE114B0016EF1A /* LaunchScreen.storyboard in Resources */,
+				67AC1E151FDE114B0016EF1A /* Assets.xcassets in Resources */,
+				67AC1E131FDE114B0016EF1A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AC1E1E1FDE114B0016EF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AC1E291FDE114B0016EF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		197FF37F0F9173212C965D7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMNetwork/Pods-YMNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F152082E7FABDD41D709F63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YMNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E93BEF047A138ED063B6A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMNetwork/Pods-YMNetwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67AC1E041FDE114B0016EF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AC1ED11FDE6DFD0016EF1A /* User.m in Sources */,
+				67AC1E9A1FDE516F0016EF1A /* YMNetTask_AccessToken.m in Sources */,
+				67AC1E831FDE4E7B0016EF1A /* YMCommandProcessTask.m in Sources */,
+				67AC1E7F1FDE39880016EF1A /* YMBaseTask.m in Sources */,
+				67AC1E7B1FDE387B0016EF1A /* YMResult.m in Sources */,
+				67AC1E941FDE51330016EF1A /* Request_AccessToken.m in Sources */,
+				67AC1E971FDE51470016EF1A /* Response_AccessToken.m in Sources */,
+				67AC1E101FDE114B0016EF1A /* ViewController.m in Sources */,
+				67AC1E541FDE26180016EF1A /* YMRealNetManager.m in Sources */,
+				67AC1EC81FDE65710016EF1A /* NT_CooperatorOauth.m in Sources */,
+				67AC1ECB1FDE66990016EF1A /* GlobleData.m in Sources */,
+				67AC1EB01FDE5A0B0016EF1A /* YMCooperator.m in Sources */,
+				67AC1E6B1FDE2DEC0016EF1A /* YMNetManager.m in Sources */,
+				67AC1E1B1FDE114B0016EF1A /* main.m in Sources */,
+				67AC1EC01FDE62F10016EF1A /* Request_AccessToken+sdk.m in Sources */,
+				67AC1E6E1FDE30CC0016EF1A /* YMManager.m in Sources */,
+				67AC1E741FDE36570016EF1A /* YMManager+User.m in Sources */,
+				67AC1EAD1FDE569D0016EF1A /* Response_Oauth.m in Sources */,
+				67AC1E4A1FDE180A0016EF1A /* YMNetConfig.m in Sources */,
+				67AC1EB71FDE5CB30016EF1A /* StringUtils.m in Sources */,
+				67AC1EDD1FDE6F430016EF1A /* NetTask_MemberRegist.m in Sources */,
+				67AC1EE01FDE70800016EF1A /* NT_MemberRegist.m in Sources */,
+				67AC1EB41FDE5C460016EF1A /* TimeUtils.m in Sources */,
+				67AC1E441FDE17710016EF1A /* YMNetTask.m in Sources */,
+				67AC1E771FDE37680016EF1A /* YMTask.m in Sources */,
+				67AC1ED71FDE6EE20016EF1A /* Request_MemberRegist.m in Sources */,
+				67AC1E4D1FDE18AE0016EF1A /* YMNetResult.m in Sources */,
+				67AC1E891FDE4FAD0016EF1A /* YMBaseNetTask.m in Sources */,
+				67AC1E861FDE4ED50016EF1A /* YMDispatchQueueManager.m in Sources */,
+				67AC1E511FDE24830016EF1A /* YMSyncResult.m in Sources */,
+				67AC1EBD1FDE62920016EF1A /* Request_Oauth+sdk.m in Sources */,
+				67AC1EAA1FDE55860016EF1A /* YMNetTask_Oauth.m in Sources */,
+				67AC1EDA1FDE6F000016EF1A /* Response_MemberRegist.m in Sources */,
+				67AC1EA41FDE554F0016EF1A /* Request_Oauth.m in Sources */,
+				67AC1E0D1FDE114B0016EF1A /* AppDelegate.m in Sources */,
+				67AC1E711FDE33670016EF1A /* YMInformationCenter.m in Sources */,
+				67AC1E571FDE295F0016EF1A /* YMRealTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AC1E1C1FDE114B0016EF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AC1E251FDE114B0016EF1A /* YMNetworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AC1E271FDE114B0016EF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AC1E301FDE114B0016EF1A /* YMNetworkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67AC1E221FDE114B0016EF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67AC1E071FDE114B0016EF1A /* YMNetwork */;
+			targetProxy = 67AC1E211FDE114B0016EF1A /* PBXContainerItemProxy */;
+		};
+		67AC1E2D1FDE114B0016EF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67AC1E071FDE114B0016EF1A /* YMNetwork */;
+			targetProxy = 67AC1E2C1FDE114B0016EF1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67AC1E111FDE114B0016EF1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67AC1E121FDE114B0016EF1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		67AC1E161FDE114B0016EF1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67AC1E171FDE114B0016EF1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67AC1E321FDE114B0016EF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		67AC1E331FDE114B0016EF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67AC1E351FDE114B0016EF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A63615C69F1C743ECE43259 /* Pods-YMNetwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G82N2Z5V69;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YMNetwork/Base/PrefixHeader.pch";
+				INFOPLIST_FILE = YMNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liu.YMNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67AC1E361FDE114B0016EF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C07C3C8D5784D9F918FC52E /* Pods-YMNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G82N2Z5V69;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YMNetwork/Base/PrefixHeader.pch";
+				INFOPLIST_FILE = YMNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liu.YMNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67AC1E381FDE114B0016EF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YMNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liu.YMNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMNetwork.app/YMNetwork";
+			};
+			name = Debug;
+		};
+		67AC1E391FDE114B0016EF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YMNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liu.YMNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMNetwork.app/YMNetwork";
+			};
+			name = Release;
+		};
+		67AC1E3B1FDE114B0016EF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YMNetworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liu.YMNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YMNetwork;
+			};
+			name = Debug;
+		};
+		67AC1E3C1FDE114B0016EF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YMNetworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liu.YMNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YMNetwork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67AC1E031FDE114B0016EF1A /* Build configuration list for PBXProject "YMNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AC1E321FDE114B0016EF1A /* Debug */,
+				67AC1E331FDE114B0016EF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67AC1E341FDE114B0016EF1A /* Build configuration list for PBXNativeTarget "YMNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AC1E351FDE114B0016EF1A /* Debug */,
+				67AC1E361FDE114B0016EF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67AC1E371FDE114B0016EF1A /* Build configuration list for PBXNativeTarget "YMNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AC1E381FDE114B0016EF1A /* Debug */,
+				67AC1E391FDE114B0016EF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67AC1E3A1FDE114B0016EF1A /* Build configuration list for PBXNativeTarget "YMNetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AC1E3B1FDE114B0016EF1A /* Debug */,
+				67AC1E3C1FDE114B0016EF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67AC1E001FDE114B0016EF1A /* Project object */;
+}

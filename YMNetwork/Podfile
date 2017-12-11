@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+target "YMNetwork" do
+
+pod 'AFNetworking'
+pod 'MJExtension'
+
+end
